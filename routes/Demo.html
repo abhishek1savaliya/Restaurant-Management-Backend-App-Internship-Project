@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Management</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.cdnfonts.com/css/google-sans" rel="stylesheet" />
+  </head>
+  <style>
+    @import url("https://fonts.cdnfonts.com/css/google-sans");
+  </style>
+
+  <body class="bg-gray-100" style="font-family: 'Product Sans', sans-serif">
+    <nav class="bg-gradient-to-r from-blue-800 to-purple-800 py-4">
+      <div class="container mx-auto flex justify-between items-center px-4">
+        <h1 class="text-white text-xl font-bold">Restaurant Management</h1>
+        <button class="text-white md:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            ></path>
+          </svg>
+        </button>
+        <ul class="hidden md:flex space-x-4">
+          <li><a href="#" class="text-white">Home</a></li>
+          <li><a href="#" class="text-white">Menu</a></li>
+          <li><a href="#" class="text-white">About</a></li>
+          <li><a href="#" class="text-white">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="bg-gray-800 text-white py-20">
+      <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-4">
+          Ready to Verify API with Postman?
+        </h2>
+        <p class="text-lg">
+          Explore and test our API endpoints using Postman for seamless
+          integration.
+        </p>
+        <div class="mt-8 flex justify-center items-center">
+          <img
+            src="https://www.svgrepo.com/show/354202/postman-icon.svg"
+            alt="Postman Icon"
+            class="w-12 h-12 mr-4"
+          />
+          <a
+            href="https://dl.pstmn.io/download/latest/win64"
+            class="inline-block bg-yellow-600 hover:bg-yellow-700 text-white py-3 px-6 rounded-lg"
+            >Download Postman</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-10">Key Features</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div
+            class="bg-gradient-to-r from-green-200 to-green-400 shadow-lg rounded-lg p-6"
+          >
+            <h3 class="text-xl font-bold mb-2">User Management</h3>
+            <p>Manage user accounts and access levels with ease.</p>
+          </div>
+
+          <div
+            class="bg-gradient-to-r from-blue-200 to-blue-400 shadow-lg rounded-lg p-6"
+          >
+            <h3 class="text-xl font-bold mb-2">Restaurant Management</h3>
+            <p>
+              Control all aspects of your restaurant, from tables to orders.
+            </p>
+          </div>
+
+          <div
+            class="bg-gradient-to-r from-purple-200 to-purple-400 shadow-lg rounded-lg p-6"
+          >
+            <h3 class="text-xl font-bold mb-2">Food Management</h3>
+            <p>Create and update your restaurant's food effortlessly.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-gradient-to-r from-gray-800 to-gray-600 text-white py-8">
+      <div class="container mx-auto text-center">
+        <p>&copy; 2024 Restaurant Management. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
