@@ -34,11 +34,36 @@
             ></path>
           </svg>
         </button>
+        <div
+          id="demoModal"
+          class="hidden fixed inset-0 flex items-center justify-center bg-gray-900 bg-opacity-50"
+        >
+          <div class="bg-white p-6 rounded-md max-w-md">
+            <p class="text-gray-800">
+              This is just a demo. Please use Postman to test the API.
+            </p>
+            <button
+              onclick="closeDemoModal()"
+              class="mt-4 inline-block bg-gray-600 hover:bg-gray-700 text-white py-2 px-4 rounded-md"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+
         <ul class="hidden md:flex space-x-4">
-          <li><a href="#" class="text-white">Home</a></li>
-          <li><a href="#" class="text-white">Menu</a></li>
-          <li><a href="#" class="text-white">About</a></li>
-          <li><a href="#" class="text-white">Contact</a></li>
+          <li>
+            <a href="#" class="text-white" onclick="openDemoModal()">Home</a>
+          </li>
+          <li>
+            <a href="#" class="text-white" onclick="openDemoModal()">Menu</a>
+          </li>
+          <li>
+            <a href="#" class="text-white" onclick="openDemoModal()">About</a>
+          </li>
+          <li>
+            <a href="#" class="text-white" onclick="openDemoModal()">Contact</a>
+          </li>
         </ul>
       </div>
     </nav>
@@ -102,5 +127,14 @@
         <p>&copy; 2024 Restaurant Management. All rights reserved.</p>
       </div>
     </footer>
+    <script>
+      function openDemoModal() {
+        document.getElementById("demoModal").classList.remove("hidden");
+      }
+
+      function closeDemoModal() {
+        document.getElementById("demoModal").classList.add("hidden");
+      }
+    </script>
   </body>
 </html>
